@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>maho taguchi portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+   <header id="header">
+    <h1 class="logo">
+      <a href="../index.html">
+        <img src="../images/logo_header@2x.png" alt="maho taguchi"/>
+      </a>
+    </h1>
+    <nav class="header_nav">
+      <ul>
+        <li><a href="../about/index.html">About me</a></li>
+        <li><a href="../works/index.html">Works</a></li>
+        <li><a href="../contact/index.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1 class="page_title">Works</h1>
+
+  <div class="works_container">
+    <!--カテゴリ分けボタン-->
+    <div class="works_filter">
+      <button class="works_filter_btn is-active" data-category="all">All</button>
+      <button class="works_filter_btn" data-category="banner">Banner</button>
+      <button class="works_filter_btn" data-category="web">Website</button>
+    </div>
+    <!--作品-->
+    <div class="works_items">
+      <!--banner/作品1-->
+      <div class="item" data-category="banner">
+        <a href="./works1.html">
+          <div class="works_img2">
+            <img src="../images/works1.png" alt="works1">
+          </div>
+          <h3 class="works_item_title">HAPPY HOLIDAY ICE CREAM</h3>
+          <div class="works_category">
+            <span>design</span>
+          </div>
+        </a>      
+      </div>
+       <!--web/作品2-->
+      <div class="item" data-category="web">
+        <a href="./works2.html">
+          <div class="works_img2">
+            <img src="../images/works2.png" alt="works2">
+          </div>
+          <h3 class="works_item_title">My Portfolio</h3>
+          <div class="works_category">
+            <span>design</span>
+            <span>coding</span>
+          </div>
+        </a>      
+      </div>          
+      <!--banner/作品3-->
+      <div class="item" data-category="banner">
+        <a href="./works3.html">
+          <div class="works_img2">
+            <img src="../images/works3.png" alt="works3">
+          </div>
+          <h3 class="works_item_title">デラックスバーガー〈POP ver.〉</h3>
+          <div class="works_category">
+            <span>design</span>
+          </div>
+        </a>      
+      </div>
+      <!--web/作品4-->  
+      <div class="item" data-category="web">
+        <a href="./works4.html">
+          <div class="works_img2">
+            <img src="../images/works4.png" alt="works4">
+          </div>
+          <h3 class="works_item_title">LIFE hair design</h3>
+          <div class="works_category">
+            <span>design</span>
+          </div>
+        </a>      
+      </div>         
+      <!--banner/作品5-->
+      <div class="item" data-category="banner">
+        <a href="./works5.html">
+          <div class="works_img2">
+            <img src="../images/works5.png" alt="works4">
+          </div>
+          <h3 class="works_item_title">デラックスバーガー〈RICH ver.〉</h3>
+          <div class="works_category">
+            <span>design</span>
+          </div>
+        </a>      
+      </div>  
+      <!--web/作品6-->
+      <div class="item" data-category="web">
+        <a href="./works6.html">
+          <div class="works_img2">
+            <img src="../images/works6.png" alt="works4">
+          </div>
+          <h3 class="works_item_title">DESIGN CAFE</h3>
+          <div class="works_category">
+            <span>coding</span>
+          </div>
+        </a>      
+      </div>       
+
+    </div>
+
+  </div>
+
+  <footer>
+    <!--背景-->
+    <div class="footer_bg">
+      <img src="../images/footer.svg" alt="">
+      <div class="footer_bg_rectangle"></div>
+    </div>
+
+    <div class="footer_inner">
+
+      <!--フッターナビ-->
+      <div class="footer_content">
+        <img src="../images/logo_footer@2x.png" alt="ロゴマーク" class="footer_logo">
+        <ul class="footer_nav">
+          <li><a href="../about/index.html">About me</a></li>
+          <li><a href="../works/index.html">Works</a></li>
+          <li><a href="../contact/index.html">Contact</a></li>
+        </ul>
+        <p class="copy-right">©maho taguchi All Rights Reserved.</p>
+      </div>
+
+      <!--topへ戻るボタン-->
+      <a href="#header" class="back-to-top">
+        <img src="../images/back_to_top.svg" alt="" class="back-to-top__flower">
+        <span class="back-to-top__circle"></span>
+        <span class="back-to-top__content">
+          <img src="../images/back_to_top_arrow.svg" alt="" class="back-to-top__arrow">
+          <span class="back-to-top__text">TOPに<br>戻る</span>
+        </span>
+      </a>
+
+    </div>
+
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="../script.js"></script>
+
+</body>
+</html>
