@@ -15,6 +15,7 @@
 </head>
 
 <body>
+  
    <header id="header">
     <h1 class="logo">
       <a href="../index.html">
@@ -28,6 +29,11 @@
         <li><a href="../contact/index.html">Contact</a></li>
       </ul>
     </nav>
+    <button class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </header>
 
   <h1 class="page_title">Works</h1>
@@ -117,6 +123,8 @@
 
     </div>
 
+    <div class="pagination"></div>
+
   </div>
 
   <footer>
@@ -140,20 +148,24 @@
       </div>
 
       <!--topへ戻るボタン-->
-      <a href="#header" class="back-to-top">
+      <div class="back-to-top">
         <img src="../images/back_to_top.svg" alt="" class="back-to-top__flower">
         <span class="back-to-top__circle"></span>
         <span class="back-to-top__content">
           <img src="../images/back_to_top_arrow.svg" alt="" class="back-to-top__arrow">
           <span class="back-to-top__text">TOPに<br>戻る</span>
         </span>
-      </a>
+      </div>
 
     </div>
 
   </footer>
   
+  <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- slickのJavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
   <script src="../script.js"></script>
 
 </body>

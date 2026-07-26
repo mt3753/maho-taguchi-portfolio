@@ -20,6 +20,7 @@
 </head>
 
 <body class="works_detail">
+  <div id="top"></div>
 
   <header id="header">
     <h1 class="logo">
@@ -34,6 +35,11 @@
         <li><a href="../contact/index.html">Contact</a></li>
       </ul>
     </nav>
+    <button class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>    
   </header>
 
   <h1 class="page_title">Works</h1>
@@ -165,6 +171,31 @@
                 </div>
               </a>
             </article>
+
+             <article class="works_item">
+              <a href="./works5.html">
+                <div class="works_img">
+                  <img src="../images/works5.png" alt="works5">
+                </div>
+                <h3 class="works_item_title">デラックスバーガー〈RICH ver.〉</h3>
+                <div class="works_category">
+                  <span>design</span>
+                </div>
+              </a>
+            </article>
+            
+            <article class="works_item">
+              <a href="./works6.html">
+                <div class="works_img">
+                  <img src="../images/works6.png" alt="works6">
+                </div>
+                <h3 class="works_item_title">DESIGN CAFE</h3>
+                <div class="works_category">
+                  <span>coding</span>
+                </div>
+              </a>
+            </article>
+
            </div>
         </section>
 
@@ -200,14 +231,14 @@
             </div>
 
             <!--topへ戻るボタン-->
-            <a href="#header" class="back-to-top">
+            <div class="back-to-top">
               <img src="../images/back_to_top.svg" alt="" class="back-to-top__flower">
               <span class="back-to-top__circle"></span>
               <span class="back-to-top__content">
                 <img src="../images/back_to_top_arrow.svg" alt="" class="back-to-top__arrow">
                 <span class="back-to-top__text">TOPに<br>戻る</span>
               </span>
-            </a>
+            </div>
 
           </div>
 
@@ -223,7 +254,10 @@
       <h2>制作プロセス</h2>
     </div>
     <div class="modal_body">
+      <!--PC-->
       <p class="summary">制作にあたり、情報整理からレイアウト・世界観など、<br>このデザインに至った背景。</p>
+      <!--SP-->
+      <p class="sp_summary">制作にあたり、情報整理からレイアウト・世界観など、このデザインに至った背景。</p>
       <div class="modal_process">
         <div class="modal_title">
           <img src="../images/modal_flower_1.svg" alt="" class="modal_flower">
@@ -245,16 +279,19 @@
         </div>
         <p>女性でも選びやすいハンバーガーとして、柔らかなイメージを目指した。とろけるチーズを装飾として用い、カラーリングもイエローとブラウンで、温かみのあるデザインにまとめた。</p>
       </div>
-      <img src="../images/works3-2.jpg" alt="" class="modal_works3"> 
+      <img src="../images/works3-2.jpg" alt="" class="modal_works"> 
     </div>
   </dialog>
 
-<!-- jQuery -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
-<!-- slickのJavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!--花びら-->
+  <div class="petals" data-image-path="../images/"></div>
 
-<script src="../script.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- slickのJavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script src="../script.js"></script>
 
 </body>
 </html>

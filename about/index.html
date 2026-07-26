@@ -14,6 +14,8 @@
 </head>
 
 <body>
+  <div id="top"></div>
+
   <header id="header">
     <h1 class="logo">
       <a href="../index.html">
@@ -27,64 +29,92 @@
         <li><a href="../contact/index.html">Contact</a></li>
       </ul>
     </nav>
+    <button class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </header>
 
   <h1 class="page_title">About me</h1>
   
     <section class="profile">
+      <!--背景の円-->    
       <div class="profile_circle">
-      <img src="../images/profile.svg" alt="">
+        <img src="../images/profile.svg" alt="">
       </div>
+      <!--背景の長方形-->
+      <div class="profile_bg"></div>
 
       <div class="profile_content">
+        <!--プロフィール部分-->
         <section class="introduction">
+          <!--プロフィール画像-->
           <div class="profile_decoration">
             <img src="../images/profile_portrait.svg" alt="portrait" class="profile_portrait">
             <img src="../images/profile_flower_1.svg" alt="" class="profile_flower_1">
             <img src="../images/profile_flower_2.svg" alt="" class="profile_flower_2">   
-          </div>       
+          </div>   
+          <!--プロフィール文章-->
           <div class="introduction_text">
             <h2>maho taguchi</h2>
             <p>公立大学デザイン学科卒業。パッケージデザインなどの身の回りのデザインに魅了され、デザインを学ぶ道へ。<br>現在は、営業・企画職として働きながら、自社アプリのキャンペーンチラシの制作・分析・改善に携わっています。情報を整理してわかりやすく伝え、結果に結びつけるための試行錯誤を繰り返す中で、伝わるデザインを制作することの楽しさを実感し、Webデザインを学び始めました。<br>デザインの目的を捉え、結果と丁寧さを大切にするデザイナーを目指しています。</p>
-          </div>
+          </div>      
         </section>
 
+        <!--skillとhobby-->
         <div class="profile_info">
+          <!--skill-->
           <section class="skill">
             <h2 class="section_title">Skill</h2>
             <div class="skill_list">
               <div class="skill_item">
-                <h3>Design</h3>
+                <div class="sp_skill_title">
+                  <img src="../images/sp_skill_flower_1.svg" alt="" class="sp_skill_flower">
+                  <h3>Design</h3>
+                </div>
                 <p>Illustrator/Photoshop/Figma</p>
               </div>
               <div class="skill_item">
-                <h3>Coding</h3>
+                <div class="sp_skill_title">
+                  <img src="../images/sp_skill_flower_2.svg" alt="" class="sp_skill_flower">
+                  <h3>Coding</h3>
+                </div>
                 <p>HTML/CSS/JavaScript</p>
               </div>
               <div class="skill_item">
-                <h3>Business</h3>
-                <p>提案資料作成/Excelを用いたデータ管理・集計/顧客対応</p>
+                <div class="sp_skill_title">
+                  <img src="../images/sp_skill_flower_3.svg" alt="" class="sp_skill_flower">                
+                  <h3>Business</h3>
+                </div>
+                <p class="pc_business">提案資料作成/Excelを用いたデータ管理・集計/顧客対応</p>
+                <p class="sp_business">提案資料作成<br>Excelを用いたデータ管理・集計<br>顧客対応</p>                
               </div>
             </div>
           </section>
-
+          <!--hobby-->
           <section class="hobby">
             <h2 class="section_title">Hobby</h2>
             <p>ファッションの配色やコーディネートを考えることが好きです。<br>それから、惹かれたパッケージやバナーデザインはつい写真を撮ってしまいます。日常の中にあるデザインを観察することが、自分の感性を育てる時間になっています。</p>
           </section>
         </div>
-
-      </div>
+      </div>    
     </section>
 
   <section class="philosophy">
-      <div class="philosophy_circle">
-        <img src="../images/philosophy.svg" alt= "">
-      </div>
+    <!--背景の円-->
+    <div class="philosophy_circle">
+      <img src="../images/philosophy.svg" alt= "">
+    </div>
+    <!--背景の長方形-->
+    <div class="philosophy_bg"></div>
 
     <div class="philosophy_content">
       <h2>大切にしていること</h2>
+      <!--PC-->
       <p class="philosophy_text">デザインは、一方的に伝えるのではなく、“伝わる”ことが大切だと考えています。<br>3つの“伝わる”を大切に、真心込めてデザインを制作します。</p>
+      <!--SP-->
+      <p class="sp_philosophy_text">デザインは、<br>一方的に伝えるのではなく、<br>“伝わる”ことが大切だと考えています。<br>3つの“伝わる”を大切に、<br>真心込めてデザインを制作します。</p>
 
       <section class="philosophy_list">
         <div class="philosophy_item">
@@ -124,7 +154,6 @@
         <span class="btn_circle"><img src="../images/arrow.svg" alt="矢印"></span>
       </a>
     </div>
-
   </section>
 
  <footer>
@@ -135,7 +164,6 @@
     </div>
 
     <div class="footer_inner">
-
       <!--フッターナビ-->
       <div class="footer_content">
         <img src="../images/logo_footer@2x.png" alt="ロゴマーク" class="footer_logo">
@@ -148,20 +176,24 @@
       </div>
 
       <!--topへ戻るボタン-->
-      <a href="#header" class="back-to-top">
+      <div class="back-to-top">
         <img src="../images/back_to_top.svg" alt="" class="back-to-top__flower">
         <span class="back-to-top__circle"></span>
         <span class="back-to-top__content">
           <img src="../images/back_to_top_arrow.svg" alt="" class="back-to-top__arrow">
           <span class="back-to-top__text">TOPに<br>戻る</span>
         </span>
-      </a>
-
+      </div>
     </div>
 
   </footer>
- 
 
+<!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+<!-- slickのJavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+ 
+<script src="../script.js"></script>
 
 </body>
 </html>

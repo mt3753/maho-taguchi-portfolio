@@ -29,6 +29,11 @@
         <li><a href="../contact/index.html">Contact</a></li>
       </ul>
     </nav>
+    <button class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>    
   </header>
 
   <h1 class="page_title">Contact</h1>  
@@ -41,7 +46,6 @@
     method="POST"
     target="hidden_iframe"
     onsubmit="submitted=true;"
-    class="c-form"
     >
 
       <div class="c-form__item">
@@ -60,41 +64,42 @@
       </div>
 
       <div class="c-form__item">
-        <label class="c-form__label" for="field-name">
+        <label class="c-form__label" for="field-company">
           会社名
         </label>    
         <input
           name="entry.1889246306"
           class="c-form__input"
-          id="field-name"
+          id="field-company"
           placeholder="例）株式会社HANACO"
           type="text"
         />
       </div>
 
       <div class="c-form__item">
-        <label class="c-form__label" for="field-name">
+        <label class="c-form__label" for="field-department">
           部署名
         </label>    
         <input
           name="entry.573279051"
           class="c-form__input"
-          id="field-name"
+          id="field-department"
           placeholder="例）人事部"
           type="text"
         />
       </div>
 
       <div class="c-form__item">
-        <label class="c-form__label" for="field-name">
+        <label class="c-form__label" for="field-email">
           メールアドレス（必須）
         </label>       
         <input
           name="entry.1124626016"
           class="c-form__input"
-          id="field-name"
+          id="field-email"
           placeholder="y.hanaco@mail.co.jp"
           type="text"
+          required="required"
         />
       </div>      
 
@@ -107,6 +112,7 @@
           class="c-form__input"
           id="field-message"
           placeholder="お問合せ内容を入力してください。"
+          required="required"
         ></textarea>
       </div>
       
@@ -141,14 +147,14 @@
             </div>
 
             <!--topへ戻るボタン-->
-            <a href="#header" class="back-to-top">
+            <div class="back-to-top">
               <img src="../images/back_to_top.svg" alt="" class="back-to-top__flower">
               <span class="back-to-top__circle"></span>
               <span class="back-to-top__content">
                 <img src="../images/back_to_top_arrow.svg" alt="" class="back-to-top__arrow">
                 <span class="back-to-top__text">TOPに<br>戻る</span>
               </span>
-            </a>
+            </div>
 
           </div>
 
@@ -163,6 +169,13 @@
       style="display: none"
       onload="if(submitted){window.location='thanks.html';}"
   ></iframe>      
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- slickのJavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script src="../script.js"></script>  
 
 </body>
 </html>

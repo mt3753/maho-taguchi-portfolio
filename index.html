@@ -14,6 +14,25 @@
 </head>
 
 <body>
+
+  <!--ローディング-->
+  <div id="loading">
+    <div class="loading_wrap">
+      <div class="loading_image">
+        <img src="./images/loading.svg" alt="loading">
+      </div>
+      <div class="loading_eye_wrap">
+        <div class="loading_eye">
+          <img src="./images/loading_eye.svg" alt="loading">
+        </div>
+      </div>
+      <div class="loading_butterfly">
+        <img src="./images/loading_butterfly.svg" alt="loading">
+      </div>
+    </div>
+  </div>
+
+
   <header id="header">
     <h1 class="logo">
       <a href="./index.html">
@@ -27,11 +46,24 @@
         <li><a href="./contact/index.html">Contact</a></li>
       </ul>
     </nav>
+    <button class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </header>
 
   <div class="main_visual">
-    <img src="./images/pc_first@2x.png" alt="女の子のイラスト"/>
+    <picture>
+      <!--SP-->
+      <source
+      media="(max-width: 1000px)"
+      srcset="./images/SP_first@2x.png">
+      <!--PC-->
+      <img src="./images/pc_first@2x.png" alt=""/>
+    </picture>
   </div>
+  
   
   <!-- concept -->
   <section class="concept">
@@ -47,12 +79,45 @@
       </a>
       <img src="./images/concept_dot.svg" alt="" class="concept_dot">
     </div>
+    <!--SPコンセプト-->
+    <div class="sp_concept">
+      <!--半円-->
+      <img src="./images/sp_concept_1.svg" alt="" class="sp_concept_circle">
+      <div class="sp_concept_body">
+        <div class="sp_concept_inner">
+          <!--SPスクロールマーク-->
+          <div class="scroll">
+            <span></span>
+            <p>Scroll</p>
+          </div>
+          <!--コンセプトの中身-->
+          <span class="concept_subtitle">concept</span>
+          <h2 class="concept_title">“伝わる”をデザインする</h2>
+          <p class="concept_description">デザインの役割は<br>伝えることにあると考えています。<br>課題解決の手段となることもあれば、<br>新しい出会いや楽しみを作るきっかけに<br>なることもあります。</p>
+          <p class="concept_description">どんな目的であれ、伝えたいことが理解され、<br>心を動かし行動に繋がるものである<br>必要があると考えています。</p>
+          <p class="concept_description">そんな“伝わる”デザインを大切にしています。</p>
+
+          <a href="./about/index.html" class="btn">
+            <img src="./images/about_butterfly.svg" alt="" class="butterfly">
+            <span class="btn_title"> About me</span>
+            <span class="btn_circle"><img src="./images/arrow.svg" alt="矢印"></span>
+          </a>
+        </div>
+      </div>
+      <!--半円-->
+      <img src="./images/sp_concept_1.svg" alt="" class="sp_concept_circle_2">
+    </div>
   </section>
 
  <!-- works -->
-  <section class="works">
+  <section class="works" id="works">
     <div class="works_frame">
       <img src="./images/works_subtract.svg" alt="" class="works_subtract">
+      <h2 class="works_title">Works</h2>
+    </div>
+    <div class="sp_works_frame">
+      <img src="./images/sp_works_subtract.svg" alt=""
+      class="sp_works_subtract">
       <h2 class="works_title">Works</h2>
     </div>
 
@@ -109,33 +174,42 @@
       </div>
       <a href="./works/index.html" class="btn">
         <span class="btn_title"> View more</span>
-        <span class="btn_circle"><img src="./images/arrow.svg" alt="矢印"></span>
+        <span class="btn_circle">
+          <img src="./images/arrow.svg" alt="矢印">
+        </span>
       </a>
     </div>
   </section>
 
   <!-- contact -->
-  <section class="contact">
+  <section class="contact" id="contact">
     <div class="contact_heading">
       <div class="contact_decoration">
         <img src="./images/about_dot_2.svg" alt="" class="dot_2">
         <img src="./images/about_plane.svg" alt="" class="top_plane">
       </div>
-    <h2 class="contact_title">Contact</h2>      
+      <!--SP紙飛行機-->
+      <div class="sp_contact_decoration">
+        <img src="./images/sp_top_plane.svg" alt="">
+      </div>
+      <h2 class="contact_title">Contact</h2>      
     </div>
-    <div class="contact_flex">
-      <p class="contact_sentence">ご覧いただきありがとうございます。<br>もし少しでも「気になる」と思っていただけましたら、<br>ぜひお声がけください。</p>
-      <a href="./contact/index.html" class="btn">
-      <span class="btn_title"> お問い合わせフォーム</span>
-      <span class="btn_circle"><img src="./images/arrow.svg" alt="矢印"></span>
-      </a>
-    </div>
+      <div class="contact_flex">
+        <!--PC-->
+        <p class="contact_sentence">ご覧いただきありがとうございます。<br>もし少しでも「気になる」と思っていただけましたら、<br>ぜひお声がけください。</p>
+        <!--SP-->
+        <p class="sp_contact_sentence">ご覧いただきありがとうございます。<br>もし少しでも<br>「気になる」と思っていただけましたら、<br>ぜひお声がけください。</p>
+        <a href="./contact/index.html" class="btn">
+          <span class="btn_title"> お問い合わせフォーム</span>
+          <span class="btn_circle"><img src="./images/arrow.svg" alt="矢印"></span>
+        </a>
+      </div>
   </section>
 
  <footer>
     <!--背景-->
     <div class="footer_bg">
-      <img src="../images/footer.svg" alt="">
+      <img src="./images/footer.svg" alt="">
       <div class="footer_bg_rectangle"></div>
     </div>
 
@@ -143,28 +217,37 @@
 
       <!--フッターナビ-->
       <div class="footer_content">
-        <img src="../images/logo_footer@2x.png" alt="ロゴマーク" class="footer_logo">
+        <img src="./images/logo_footer@2x.png" alt="ロゴマーク" class="footer_logo">
         <ul class="footer_nav">
-          <li><a href="../about/index.html">About me</a></li>
-          <li><a href="../works/index.html">Works</a></li>
-          <li><a href="../contact/index.html">Contact</a></li>
+          <li><a href="./about/index.html">About me</a></li>
+          <li><a href="./works/index.html">Works</a></li>
+          <li><a href="./contact/index.html">Contact</a></li>
         </ul>
         <p class="copy-right">©maho taguchi All Rights Reserved.</p>
       </div>
 
       <!--topへ戻るボタン-->
-      <a href="#header" class="back-to-top">
-        <img src="../images/back_to_top.svg" alt="" class="back-to-top__flower">
+      <div class="back-to-top">
+        <img src="./images/back_to_top.svg" alt="" class="back-to-top__flower">
         <span class="back-to-top__circle"></span>
         <span class="back-to-top__content">
-          <img src="../images/back_to_top_arrow.svg" alt="" class="back-to-top__arrow">
+          <img src="./images/back_to_top_arrow.svg" alt="" class="back-to-top__arrow">
           <span class="back-to-top__text">TOPに<br>戻る</span>
         </span>
-      </a>
+      </div>
 
     </div>
-
   </footer>
+
+  <!--花びら-->
+  <div class="petals" data-image-path="./images/"></div>
+
+  <!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+<!-- slickのJavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script src="./script.js"></script>
 
 </body>
 </html>
