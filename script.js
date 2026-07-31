@@ -137,6 +137,7 @@ if (document.querySelector(".pagination")) {
   const buttons = document.querySelectorAll(".works_filter_btn");
   const items = document.querySelectorAll(".item");
   const pagination = document.querySelector(".pagination");
+  const itemsContainer = document.querySelector(".works_items");
 
   let currentCategory = "all";
   const itemsPerPage = 4; // 1ページに表示する作品数
@@ -217,7 +218,22 @@ if (document.querySelector(".pagination")) {
       buttons.forEach(btn => btn.classList.remove("is-active"));
       button.classList.add("is-active");
 
-      updateDisplay();
+      // フェードアウト
+      itemsContainer.classList.add("is-changing");
+
+      // フェードアウトが終わったら表示を切り替える
+      itemsContainer.addEventListener("transitionend", function handler() {
+        updateDisplay();
+
+        // フェードイン
+        requestAnimationFrame(() => {
+          itemsContainer.classList.remove("is-changing");
+        });
+
+        // 一度だけ実行
+        itemsContainer.removeEventListener("transitionend", handler);
+      });
+      
     });
   });
 
