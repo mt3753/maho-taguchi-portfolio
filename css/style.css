@@ -994,6 +994,7 @@ footer{
 .back-to-top__flower{
   width: 160px;
   height: auto;
+  overflow: hidden;
 }
 
 .back-to-top:hover .back-to-top__flower{
